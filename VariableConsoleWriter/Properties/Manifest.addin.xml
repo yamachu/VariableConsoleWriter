@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+	<Extension path="/MonoDevelop/Ide/Commands">
+		<Command id="VariableConsoleWriter.DebugWiterCommands.InsertDebugConsole" _label="Show Variable in Console" defaultHandler="VariableConsoleWriter.InsertDebugConsoleHandler" />
+	</Extension>
+	<Extension path="/MonoDevelop/SourceEditor2/ContextMenu/Editor">
+		<Condition id="FileType" fileExtensions=".cs">
+			<CommandItem id="VariableConsoleWriter.DebugWiterCommands.InsertDebugConsole" insertafter="MonoDevelop.SourceEditor.SourceEditorCommands.MarkerOperations" />
+			<SeparatorItem/>
+		</Condition>
+	</Extension>
+</ExtensionModel>
